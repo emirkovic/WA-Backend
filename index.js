@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 9000;
 
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(express.json({ limit: '10mb' }));
-app.use(cors({origin: "http://localhost:3000"}));
+app.use(cors({origin: ["http://localhost:3000", "https://kviz-mern-app.onrender.com"],
+}));
 
 app.use('/api/users', RouterUser);
 app.use('/api/quizzes', RouterQuiz);
