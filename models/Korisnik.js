@@ -42,6 +42,6 @@ const UserSchema = new Schema({
         type: Boolean,
         default: false
     }
-})
+});
 
 module.exports = mongoose.model('Korisnik', UserSchema);

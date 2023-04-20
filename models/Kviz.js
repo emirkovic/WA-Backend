@@ -50,4 +50,4 @@ const QuizSchema = new Schema({
   }
 });
 
-module.exports = Quiz = mongoose.model('Kviz', QuizSchema);
+module.exports = mongoose.model('Kviz', QuizSchema);
